@@ -1,0 +1,2 @@
+backup_script/backups/*.tar.gz
+backup_script/log_files/binlog.*
