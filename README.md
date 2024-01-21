@@ -17,3 +17,6 @@ for log in ./log_files/binlog.*; do mysqlbinlog --no-defaults -dmy_database $log
 docker compose exec -i mysql-recovery mysql -uroot -p'my_root_password' --execute='show tables;' my_database
 docker compose exec -i mysql-recovery mysql -uroot -p'my_root_password' --execute='select * from Persons;' my_database
 ```
+
+- [types of backup](https://spanning.com/blog/types-of-backup-understanding-full-differential-incremental-backup/)
+- [incremental backups](https://spinupwp.com/incremental-mysql-backups/)
