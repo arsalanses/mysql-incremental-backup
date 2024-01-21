@@ -16,6 +16,7 @@ services:
 
   mysql-recovery:
     image: docker.io/bitnami/mysql:8.0.36
+    container_name: mysql-recovery
     ports:
       - '127.0.0.1:33307:3306'
     environment:
